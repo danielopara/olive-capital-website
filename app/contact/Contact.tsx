@@ -44,8 +44,8 @@ const ContactForm: React.FC = () => {
   ];
 
   const contactInfo: ContactInfo[] = [
-    { icon: "./call.svg", text: "+23 98281 9291", alt: "Phone" },
-    { icon: "./message.svg", text: "laboxacc@domain.com", alt: "Email" },
+    { icon: "./call.svg", text: "+234 809 729 6113", alt: "Phone" },
+    { icon: "./message.svg", text: "info@olivecaptialltd.com", alt: "Email" },
     {
       icon: "./Location.svg",
       text: "150 Obafemi Awolowo Way, Allen, Ikeja.",
@@ -83,8 +83,26 @@ const ContactForm: React.FC = () => {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (validateForm()) {
-      // Handle form submission
-      console.log("Form submitted:", formData);
+      const subject = encodeURIComponent(
+        `Service Inquiry from ${formData.name}`
+      );
+      const body = encodeURIComponent(`
+    Name: ${formData.name}
+    Phone: ${formData.phone}
+    Email: ${formData.email}
+    Service: ${
+      formData.service
+        ? services.find((s) => s.id === formData.service)?.label
+        : "Not selected"
+    }
+    Message: ${formData.message}
+  `);
+
+      console.log(body);
+      const mailtoLink = `mailto:info@olivecapitalltd.com?subject=${subject}&body=${body}`;
+
+      // Open mailto link
+      window.location.href = mailtoLink;
     }
   };
 
@@ -232,7 +250,7 @@ const ContactForm: React.FC = () => {
               {"Let's Talk"}
             </button>
           </div>
-        </form>{" "}
+        </form>
       </div>
 
       {/* Contact Information Section */}

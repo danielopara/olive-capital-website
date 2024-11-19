@@ -24,6 +24,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="overflow-x-hidden">
       <body className={`${poppins.className} bg-white overflow-x-hidden`}>
+        <link rel="icon" href="/favicon.svg" />
+
         <div className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-3 w-full">
           <Nav />
         </div>

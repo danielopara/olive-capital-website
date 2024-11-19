@@ -50,9 +50,9 @@ export default function Footer() {
           {/* Terms and conditions */}
         </small>
         <div className="flex flex-col md:flex-row justify-end md:justify-end mt-8 space-y-2 md:space-y-0 md:space-x-4 text-sm text-black">
-          <a href="#">Help</a>
+          {/* <a href="#">Help</a> */}
           <a href="#">Terms of condition</a>
-          <a href="/policy">Privacy policy</a>
+          {/* <a href="/policy">Privacy policy</a> */}
         </div>
       </div>
     </footer>
