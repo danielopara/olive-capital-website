@@ -22,7 +22,7 @@ const YourGoal: React.FC = () => {
 
       {/* Text Section */}
       <div className="w-full md:w-1/2 space-y-4 mt-8">
-        <ul className="space-y-4 text-gray-700 list-disc">
+        <ul className="space-y-4 text-gray-700 list-disc text-justify">
           <li>
             <span className="font-semibold">Proven Expertise:</span> With years
             of experience in asset management, we have a track record of

@@ -24,7 +24,9 @@ const ServiceDescription: React.FC = () => {
           <h2 className="text-3xl font-semibold text-black mb-4 mt-16">
             {service}
           </h2>
-          <p className="text-gray-700 leading-relaxed">{serviceBody}</p>
+          <p className="text-gray-700 leading-relaxed text-justify">
+            {serviceBody}
+          </p>
           {/* <p className="text-gray-700 leading-relaxed mt-4">
             We understand that every investor is different, hence, we have
             developed bespoke investment strategies tailored to your specific

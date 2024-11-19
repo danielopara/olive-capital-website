@@ -12,7 +12,7 @@ export default function AboutHero() {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
             About Us
           </h1>
-          <p className="text-sm md:text-sm lg:text-sm mb-6">
+          <p className="text-sm md:text-sm lg:text-sm mb-6 leading-relaxed text-justify max-w-lg">
             Olive Capital is an independent investment company with a proven
             track record in delivering exceptional returns. Our focus on the
             Nigerian capital market, combined with an adaptive approach to

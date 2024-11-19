@@ -12,7 +12,7 @@ const ContactHero = () => {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
             Contact Us
           </h1>
-          <p className="text-sm md:text-sm lg:text-sm mb-6">
+          <p className="text-sm md:text-sm lg:text-sm mb-6 text-justify leading-relaxed max-w-lg">
             Strategic investment solutions designed to help you achieve your
             financial goals. We offer tailored investment strategies that
             balance risk and growth, using market insights and diversified asset

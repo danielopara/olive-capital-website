@@ -15,7 +15,7 @@ const ServiceHero: React.FC = () => {
           <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold mb-8">
             {service} {/* Dynamically set title */}
           </h1>
-          <p className="text-sm md:text-sm lg:text-sm mr-4 mb-6">
+          <p className="text-sm md:text-sm lg:text-sm mr-4 mb-6 text-justify leading-relaxed max-w-lg">
             {shortBody} {/* Dynamically set description */}
           </p>
         </div>

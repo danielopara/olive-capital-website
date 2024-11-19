@@ -9,7 +9,7 @@ export default function CoreValues() {
           <h1 className="text-black text-3xl font-bold italic">
             Your Goals, Our Mission
           </h1>
-          <p className="text-black text-sm max-w-md">
+          <p className="text-black text-sm max-w-md text-justify">
             {`Building strong relationships through open communication and
             maintaining ethical standard. Prioritizing client's goals and
             working tirelessly to help them succeed. Pioneering new investment

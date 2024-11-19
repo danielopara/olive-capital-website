@@ -29,33 +29,37 @@ export default function AboutDescription() {
       </div>
 
       {/* Text Content */}
-      <div className="w-full md:w-1/2 text-center md:text-left text-white px-4 md:px-8 lg:px-12">
+      <div className="w-full md:w-1/2 text-center md:text-left text-white px-4 md:px-8 lg:px-12 ">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 md:mb-8">
           Our philosophy is <br className="hidden sm:block" /> built on three
           core <br className="hidden sm:block" /> pillars:
         </h1>
 
-        <ul className="text-sm sm:text-base space-y-6 list-disc pl-4 md:pl-5">
-          <li className="leading-relaxed">
-            <span className="font-bold">Innovative Investment Strategies:</span>{" "}
-            We blend traditional and alternative investment techniques,
-            identifying opportunities that align with your long-term financial
-            objectives.
-          </li>
+        <div className="max-w-sm">
+          <ul className="text-sm sm:text-base space-y-6 list-disc pl-4 md:pl-5 text-justify">
+            <li className="leading-relaxed">
+              <span className="font-bold">
+                Innovative Investment Strategies:
+              </span>{" "}
+              We blend traditional and alternative investment techniques,
+              identifying opportunities that align with your long-term financial
+              objectives.
+            </li>
 
-          <li className="leading-relaxed">
-            <span className="font-bold">Capital Preservation:</span> Our risk
-            management framework ensures that your portfolio is optimized for
-            growth while being protected against market volatility.
-          </li>
+            <li className="leading-relaxed">
+              <span className="font-bold">Capital Preservation:</span> Our risk
+              management framework ensures that your portfolio is optimized for
+              growth while being protected against market volatility.
+            </li>
 
-          <li className="leading-relaxed">
-            <span className="font-bold">Client-Centric Approach:</span> We
-            believe that each client is unique, and we tailor our services to
-            reflect your specific needs, providing continuous support and
-            insights to ensure that your financial goals are met.
-          </li>
-        </ul>
+            <li className="leading-relaxed">
+              <span className="font-bold">Client-Centric Approach:</span> We
+              believe that each client is unique, and we tailor our services to
+              reflect your specific needs, providing continuous support and
+              insights to ensure that your financial goals are met.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
