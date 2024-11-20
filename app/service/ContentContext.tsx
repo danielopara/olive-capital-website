@@ -8,12 +8,14 @@ interface ContentContextType {
   shortBody: string;
   serviceImage: string;
   serviceBody: string;
+  bottomText: string;
   setService: (
     newService: string,
     newBackgroundImage: string,
     newShortBody: string,
     newImage: string,
-    newBody: string
+    newBody: string,
+    newBottomText: string
   ) => void;
 }
 
@@ -42,19 +44,26 @@ As an investor you have access to solutions crafted especially for you.`);
     We offer both active and passive management strategies, whether you prefer to capitalize on market opportunities through active trading or prefer a low cost, long term approach.
      We can structure your portfolio to match your preference.`
   );
+  const [bottomText, setBottomText] = useState<string>(
+    `Retirement Planning: Preparing for retirement is one of the most critical steps in securing your future.
+     We help you build a retirement plan that ensures you have the financial resources to live comfortably and pursue your passions after you retire.
+     Our strategies are built around your lifestyle goals and income needs.`
+  );
 
   const setService = (
     newService: string,
     newImage: string,
     newBody: string,
     newBackgroundImage: string,
-    shortBody: string
+    shortBody: string,
+    bottomText: string
   ) => {
     setServiceName(newService);
     setServiceImage(newImage);
     setServiceBody(newBody);
     setBackgroundImage(newBackgroundImage);
     setShortBody(shortBody);
+    setBottomText(bottomText);
   };
 
   return (
@@ -65,6 +74,7 @@ As an investor you have access to solutions crafted especially for you.`);
         serviceBody,
         backgroundImage,
         shortBody,
+        bottomText,
         setService,
       }}
     >

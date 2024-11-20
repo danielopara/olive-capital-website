@@ -44,8 +44,8 @@ const ContactForm: React.FC = () => {
   ];
 
   const contactInfo: ContactInfo[] = [
-    { icon: "./call.svg", text: "+234 809 729 6113", alt: "Phone" },
-    { icon: "./message.svg", text: "info@olivecaptialltd.com", alt: "Email" },
+    { icon: "./Call.svg", text: "+234 809 729 6113", alt: "Phone" },
+    { icon: "./Message.svg", text: "info@olivecaptialltd.com", alt: "Email" },
     {
       icon: "./Location.svg",
       text: "150 Obafemi Awolowo Way, Allen, Ikeja.",

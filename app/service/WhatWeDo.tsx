@@ -32,19 +32,17 @@ As an investor you have access to solutions crafted especially for you.`,
   We offer both active and passive management strategies, whether you prefer to capitalize on market opportunities through active trading or prefer a low cost, long term approach. 
   We can structure your portfolio to match your preference.`,
 
-  description2: `Managing a client’s investment portfolio requires an informed and disciplined approach. 
-  At Olive Capital, our professional portfolio management team employs in-depth research in identifying and managing the right mix of investments to meet the client’s specific needs. \n
-  
-
-Whether a client is seeking income or targeting capital growth, our portfolio managers can give them exposure to a range of investments including but not limited to stocks, bonds, money market, alternative assets and best-in-breed mutual funds.
-
-Our comprehensive techniques decipher the intricate data of the Nigerian and international markets into coherent portfolio models that can be personalized based on a client’s risk appetite and investment horizon prior to implementation. We design and manage diversified portfolio aimed to help our clients (both Institutional clients and HNIs) achieve their financial goals while maintaining liquidity for precautionary cash needs. Our best-in-class trading system allows us to efficiently implement the investment strategies made to your risk profile and will yield maximal return,
-
-At Olive Capital we understand that your financial future is one of your most important priorities. Whether you're planning for retirement, your children's education, or leaving a legacy, securing your financial future requires a strategic approach. With our tailored asset management services, we help you build and preserve wealth, so you can focus on living your life with confidence.
-Securing your future means planning for both expected and unexpected life events. By partnering with experienced asset managers, you gain the insight and tools necessary to make informed decisions that align with your long-term financial goals. Our strategies are designed to adapt to changing market conditions while ensuring your investments grow steadily over time.`,
-
   description3: `At Olive Capital we understand that your financial future is one of your most important priorities whether you are planning for retirement, your children’s education or leaving a legacy, securing your financial future requires a strategic approach. With our tailored services, we help you build and preserve wealth, so you can focus on living your life with confidence.
 Securing you future means planning for both expected and unexpected life events. By partnering with experienced asset managers you gain the insight and tools necessary to make informed decisions that align with your long term financial goals.`,
+
+  bottomText1: `Retirement Planning: Preparing for retirement is one of the most critical steps in securing your future.
+   We help you build a retirement plan that ensures you have the financial resources to live comfortably and pursue your passions after you retire.
+   Our strategies are built around your lifestyle goals and income needs.`,
+  bottomText2: `Personalized Financial Planning: We begin by understanding your unique financial situation, goals, and risk tolerance. 
+   Our advisors work closely with you to create a customized plan that takes into account your current financial standing and the future you envision.`,
+  bottomText3: `Continuous Monitoring & Adjustments: Life and financial markets are constantly evolving.
+    That's why we continuously monitor your portfolio and make adjustments as needed to keep your plan aligned with your goals.
+    We provide regular reports and insights to ensure your investments remain on track for long-term success`,
 };
 
 const WhatWeDo: React.FC = () => {
@@ -55,7 +53,8 @@ const WhatWeDo: React.FC = () => {
     serviceImage: string,
     serviceBody: string,
     serviceBackgroundImage: string,
-    serviceShortBody: string
+    serviceShortBody: string,
+    bottomText: string
   ) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
     setService(
@@ -63,7 +62,8 @@ const WhatWeDo: React.FC = () => {
       serviceImage,
       serviceBody,
       serviceBackgroundImage,
-      serviceShortBody
+      serviceShortBody,
+      bottomText
     );
   };
 
@@ -86,7 +86,8 @@ const WhatWeDo: React.FC = () => {
                     services.imagePath1,
                     services.description1,
                     services.backgroundImage1,
-                    services.shortBody1
+                    services.shortBody1,
+                    services.bottomText1
                   )
                 }
               >
@@ -100,7 +101,8 @@ const WhatWeDo: React.FC = () => {
                       services.imagePath1,
                       services.description1,
                       services.backgroundImage1,
-                      services.shortBody1
+                      services.shortBody1,
+                      services.bottomText1
                     )
                   }
                 />
@@ -113,9 +115,10 @@ const WhatWeDo: React.FC = () => {
                   handleClick(
                     services.title2,
                     services.imagePath2,
-                    services.description2,
+                    "",
                     services.backgroundImage2,
-                    services.shortBody2
+                    services.shortBody2,
+                    services.bottomText2
                   )
                 }
               >
@@ -126,9 +129,10 @@ const WhatWeDo: React.FC = () => {
                   handleClick(
                     services.title2,
                     services.imagePath2,
-                    services.description2,
+                    "",
                     services.backgroundImage2,
-                    services.shortBody2
+                    services.shortBody2,
+                    services.bottomText2
                   )
                 }
               >
@@ -144,7 +148,8 @@ const WhatWeDo: React.FC = () => {
                     services.imagePath3,
                     services.description3,
                     services.backgroundImage3,
-                    services.shortBody3
+                    services.shortBody3,
+                    services.bottomText3
                   )
                 }
               >
@@ -157,7 +162,8 @@ const WhatWeDo: React.FC = () => {
                     services.imagePath3,
                     services.description3,
                     services.backgroundImage3,
-                    services.shortBody3
+                    services.shortBody3,
+                    services.bottomText3
                   )
                 }
               >
