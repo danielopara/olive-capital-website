@@ -63,7 +63,7 @@ const Nav: React.FC = () => {
     },
     {
       href: "/service/corporate-finance",
-      label: "Corporate Finance & Investment Banking",
+      label: "Investment Banking",
       id: "corporate-finance",
     },
     {
@@ -119,24 +119,40 @@ const Nav: React.FC = () => {
   }, [isMenuOpen]);
 
   const renderServiceDropdown = (): JSX.Element => {
+    const clickableLinks = [
+      "financial-advisory",
+      "portfolio-management",
+      "securities-trading",
+    ];
+
     return (
       <div
         id="service-dropdown"
         className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg border border-gray-200 z-50 min-w-[250px]"
       >
-        {serviceSubLinks.map((subLink) => (
-          <Link
-            key={subLink.id}
-            href={subLink.href}
-            className="block px-4 py-2 hover:bg-gray-100 text-gray-800 text-sm"
-            onClick={() => {
-              handleLinkClick(subLink.id);
-              setIsServiceDropdownOpen(false);
-            }}
-          >
-            {subLink.label}
-          </Link>
-        ))}
+        {serviceSubLinks.map((subLink) => {
+          const isClickable = clickableLinks.includes(subLink.id);
+          return isClickable ? (
+            <Link
+              key={subLink.id}
+              href={subLink.href}
+              className="block px-4 py-2 hover:bg-gray-100 text-gray-800 text-sm"
+              onClick={() => {
+                handleLinkClick(subLink.id);
+                setIsServiceDropdownOpen(false);
+              }}
+            >
+              {subLink.label}
+            </Link>
+          ) : (
+            <span
+              key={subLink.id}
+              className="block px-4 py-2 text-gray-400 text-sm cursor-not-allowed"
+            >
+              {subLink.label}
+            </span>
+          );
+        })}
       </div>
     );
   };

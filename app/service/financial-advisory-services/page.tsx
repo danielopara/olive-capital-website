@@ -1,6 +1,6 @@
 import React from "react";
 import ServiceHero from "./ServiceHero";
-import ContactUs from "../../components/ContactUs";
+// import ContactUs from "../../components/ContactUs";
 import ServiceDescription from "./ServiceDescription";
 
 export default function page() {
@@ -9,7 +9,7 @@ export default function page() {
       <ServiceHero />
       {/* <WhatWeDo /> */}
       <ServiceDescription />
-      <ContactUs />
+      {/* <ContactUs /> */}
     </div>
   );
 }

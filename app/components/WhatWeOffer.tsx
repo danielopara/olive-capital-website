@@ -119,7 +119,7 @@ const OurServices: React.FC = () => {
           className="rounded-md"
         />
       ),
-      title: "Corporate Finance & Investment Banking",
+      title: "Investment Banking",
       description:
         "Strategic financial services for corporate clients and investment opportunities.",
       colorClass: "bg-white text-[#0B3D3B] border border-gray-300",
