@@ -1,7 +1,7 @@
 import React from "react";
 import ContactHero from "./ContactHero";
 import Advice from "../about/Advice";
-import ContactUs from "../components/ContactUs";
+// import ContactUs from "../components/ContactUs";
 import Location from "./Location";
 import Contact from "./Contact";
 
@@ -12,7 +12,7 @@ export default function page() {
       <Contact />
       <Location />
       <Advice />
-      <ContactUs />
+      {/* <ContactUs /> */}
     </main>
   );
 }
