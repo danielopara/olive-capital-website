@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import SocialButton from "./SocialButton";
+import Terms from "./Terms";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -17,8 +18,7 @@ export default function Footer() {
             </a>
           </h3>
           <p className="text-sm mb-3 max-w-xs text-left text-black">
-            Olive Capital is the highest-rated expert team in the world, helping
-            you achieve financial growth with precision and care.
+            With Olive Capital your financial dreams are valid{" "}
           </p>
         </div>
 
@@ -37,8 +37,16 @@ export default function Footer() {
           <p>150 Obafemi Awolowo Way,</p>
           <p>Ikeja, Lagos, Nigeria</p>
           <h4 className="font-bold mt-3 text-base">Contact</h4>
-          <p>Phone: +234 123 4567</p>
-          <p>Email: info@olivecapital.com</p>
+          <p>Phone: +234 809 729 6113</p>
+          <p>
+            Email:{" "}
+            <a
+              href="mailto:info@olivecaptialltd.com"
+              className="text-blue-500 hover:underline ml-1"
+            >
+              info@olivecaptialltd.com
+            </a>
+          </p>
         </div>
 
         {/* Social buttons section */}
@@ -58,7 +66,7 @@ export default function Footer() {
           &copy; {currentYear} Olive Capital. All rights reserved.
         </small>
         <div className="flex flex-col md:flex-row justify-end mt-4 md:mt-0 space-y-1 md:space-y-0 md:space-x-3 text-xs text-black">
-          <a href="/terms">Terms of Service</a>
+          <Terms />
           {/* <a href="/policy">Privacy Policy</a> */}
         </div>
       </div>
