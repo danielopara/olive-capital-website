@@ -17,14 +17,14 @@ export default function Footer() {
               <Image src="/icon.svg" width={80} height={28} alt="nav logo" />
             </a>
           </h3>
-          <p className="text-sm mb-3 max-w-xs text-left text-black">
-            With Olive Capital your financial dreams are valid{" "}
+          <p className="text-sm mb-3 max-w-xs text-left italic text-black">
+            ...Your financial dreams are valid{" "}
           </p>
         </div>
 
         {/* Navigation Links */}
         <div className="flex flex-col text-black gap-2 text-sm">
-          <h4 className="font-bold mb-1 text-base">Quick Links</h4>
+          <h4 className="font-bold mb-1 text-sm">Quick Links</h4>
           <a href="/">Home</a>
           <a href="/about">About Us</a>
           <a href="/services/financial-advisory-services">Our Services</a>
@@ -33,10 +33,10 @@ export default function Footer() {
 
         {/* Location and Contact Section */}
         <div className="flex flex-col text-black gap-2 text-sm">
-          <h4 className="font-bold mb-1 text-base">Location</h4>
+          <h4 className="font-bold mb-1 text-sm">Location</h4>
           <p>150 Obafemi Awolowo Way,</p>
           <p>Ikeja, Lagos, Nigeria</p>
-          <h4 className="font-bold mt-3 text-base">Contact</h4>
+          <h4 className="font-bold mt-3 text-sm">Contact</h4>
           <p>Phone: +234 809 729 6113</p>
           <p>
             Email:{" "}
@@ -51,7 +51,7 @@ export default function Footer() {
 
         {/* Social buttons section */}
         <div className="flex flex-col items-start">
-          <h4 className="font-bold mb-1 text-base">Follow Us</h4>
+          <h4 className="font-bold mb-1 text-sm">Follow Us</h4>
           <div className="flex flex-row space-x-4">
             <SocialButton twitter />
             <SocialButton linkedin />

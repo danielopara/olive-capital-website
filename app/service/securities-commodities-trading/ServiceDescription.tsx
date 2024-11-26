@@ -42,7 +42,7 @@ const ServiceDescription: React.FC = () => {
           </h3>
         </div>
         <div className="w-full md:w-1/2">
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg text-gray-700 italic text-justify leading-relaxed">
             {`Continuous Monitoring & Adjustments: Life and financial markets are
             constantly evolving. That's why we continuously monitor your
             portfolio and make adjustments as needed to keep your plan aligned

@@ -82,7 +82,7 @@ const ServiceDescription: React.FC = () => {
           </h3>
         </div>
         <div className="w-full md:w-1/2">
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg text-gray-700 italic text-justify leading-relaxed">
             Personalized Financial Planning: We begin by understanding your
             unique financial situation, goals, and risk tolerance. Our advisors
             work closely with you to create a customized plan that takes into

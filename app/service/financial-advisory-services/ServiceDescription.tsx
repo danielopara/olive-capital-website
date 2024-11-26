@@ -51,7 +51,7 @@ const ServiceDescription: React.FC = () => {
           </h3>
         </div>
         <div className="w-full md:w-1/2">
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg text-gray-700 italic text-justify leading-relaxed">
             Retirement Planning: Preparing for retirement is one of the most
             critical steps in securing your future. We help you build a
             retirement plan that ensures you have the financial resources to
