@@ -63,7 +63,7 @@ const Advice: React.FC = () => {
             </h3>
           </div>
           <div className="w-full md:w-1/2">
-            <p className="text-gray-700 text-justify leading-relaxed">
+            <p className="text-gray-700 text-justify italic leading-relaxed">
               Long-Term Wealth Growth: We focus on sustainable growth rather
               than short-term gains. By investing in a diversified portfolio of
               high-quality assets, we help you achieve steady wealth
