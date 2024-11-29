@@ -10,8 +10,7 @@ export default function Mission() {
               Our Vision/Mission
             </h3>
             <h1 className="text-white text-3xl md:text-4xl font-bold">
-              To be the global brand for value creation in investment banking,
-              as a company.
+              To be the global brand for value creation in investment banking.
             </h1>
             <p className="text-white text-sm max-w-md">
               To provide world-class investment banking services in a
