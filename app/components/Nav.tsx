@@ -221,19 +221,27 @@ const Nav: React.FC = () => {
                         isServiceDropdownOpen ? "max-h-48" : "max-h-0"
                       }`}
                     >
-                      {serviceSubLinks.map((subLink) => (
-                        <Link
-                          key={subLink.id}
-                          href={subLink.href}
-                          className="block py-3 text-black px-8 hover:bg-gray-50 text-sm border-t"
-                          onClick={() => {
-                            handleLinkClick(subLink.id);
-                            setIsServiceDropdownOpen(false); // Close dropdown after clicking a sublink
-                          }}
-                        >
-                          {subLink.label}
-                        </Link>
-                      ))}
+                      {serviceSubLinks
+                        .filter((subLink) =>
+                          [
+                            "financial-advisory",
+                            "portfolio-management",
+                            "securities-trading",
+                          ].includes(subLink.id)
+                        )
+                        .map((subLink) => (
+                          <Link
+                            key={subLink.id}
+                            href={subLink.href}
+                            className="block py-3 text-black px-8 hover:bg-gray-50 text-sm border-t"
+                            onClick={() => {
+                              handleLinkClick(subLink.id);
+                              setIsServiceDropdownOpen(false);
+                            }}
+                          >
+                            {subLink.label}
+                          </Link>
+                        ))}
                     </div>
                   </div>
                 ) : (
